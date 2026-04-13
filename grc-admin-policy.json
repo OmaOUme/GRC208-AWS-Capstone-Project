@@ -1,0 +1,22 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "rds:Describe*",
+        "s3:GetObject",
+        "s3:PutObject",
+        "s3:ListBucket",
+        "dynamodb:Scan",
+        "dynamodb:GetItem",
+        "dynamodb:PutItem",
+        "lambda:InvokeFunction",
+        "cloudwatch:GetMetricData",
+        "config:Describe*",
+        "config:Get*"
+      ],
+      "Resource": "*"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+content = open('cloudformation-database-stack.yaml').read()
+print("Before:", [l for l in content.split('\n') if 'BackupRetention' in l])
+content = content.replace('BackupRetentionPeriod: 7', 'BackupRetentionPeriod: 0')
+content = content.replace('BackupRetentionPeriod: 2', 'BackupRetentionPeriod: 0')
+content = content.replace('BackupRetentionPeriod: 3', 'BackupRetentionPeriod: 0')
+content = content.replace('BackupRetentionPeriod: 35', 'BackupRetentionPeriod: 0')
+open('cloudformation-database-stack.yaml', 'w').write(content)
+print("After:", [l for l in content.split('\n') if 'BackupRetention' in l])

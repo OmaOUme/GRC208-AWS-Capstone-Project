@@ -1,0 +1,24 @@
+{
+  "widgets": [
+    {
+      "type": "metric",
+      "properties": {
+        "title": "GRC Compliance Percentage",
+        "metrics": [["GRC", "CompliancePercentage"]],
+        "period": 300,
+        "stat": "Average",
+        "region": "us-east-1"
+      }
+    },
+    {
+      "type": "metric",
+      "properties": {
+        "title": "Non-Compliant Rules",
+        "metrics": [["GRC", "NonCompliantRules"]],
+        "period": 300,
+        "stat": "Sum",
+        "region": "us-east-1"
+      }
+    }
+  ]
+}
